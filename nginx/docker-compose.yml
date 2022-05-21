@@ -1,7 +1,8 @@
-version: '3'
+version: '3.7'
 services:
   WEB:
-    image: nginx:1.20
+    image: nginx:1.21-alpine
+    container_name: server-nginx
     ports:
       - 80:80
     volumes:
